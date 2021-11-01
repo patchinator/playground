@@ -1,0 +1,15 @@
+$primary_color: rgb(30, 30, 73);
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem;
+  background: $primary_color;
+  color: white;
+
+  .navbar_buttons {
+    display: flex;
+    align-items: center;
+  }
+}
