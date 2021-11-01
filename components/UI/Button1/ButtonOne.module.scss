@@ -1,0 +1,17 @@
+$primary_color: #1e1e49;
+$secondary_color: #27275a;
+
+.button {
+  background: none;
+  color: white;
+  border: none;
+  position: relative;
+  transition: 120ms ease-in;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 180ms all ease-in;
+
+  &:hover {
+    background: $secondary_color;
+  }
+}

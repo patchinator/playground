@@ -2,8 +2,8 @@ $primary_color: rgb(30, 30, 73);
 
 .navbar {
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0 2rem 0 2rem;
   background: $primary_color;
   color: white;
@@ -11,5 +11,36 @@ $primary_color: rgb(30, 30, 73);
   .navbar_buttons {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    .profile_picture {
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 0.5rem;
+
+      .online_status {
+        position: absolute;
+        bottom: -0.25rem;
+        right: -0.25rem;
+        width: 1rem;
+        height: 1rem;
+        background: green;
+        border-radius: 50%;
+        border: 1px solid black;
+      }
+    }
+  }
+
+  .contact_button_wrapper {
+    display: flex;
+    justify-content: flex-end;
   }
 }

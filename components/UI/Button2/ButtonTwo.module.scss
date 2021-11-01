@@ -1,0 +1,18 @@
+$primary_color: rgb(165, 250, 222);
+$secondary_color: rgb(235, 255, 248);
+
+.button {
+  font-style: inherit;
+  background: rgb(165, 250, 222);
+  border: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 180ms ease-in;
+  font-size: 14px;
+
+  &:hover {
+    background: $secondary_color;
+  }
+}
