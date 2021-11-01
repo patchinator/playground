@@ -12,22 +12,6 @@ $dropdown-color: rgb(239, 239, 239);
   align-items: center;
   position: relative;
 
-  .button {
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-    font-size: 24px;
-    border: none;
-    box-shadow: inset 0 0 0 0 $secondary-color;
-    cursor: pointer;
-    font-family: inherit;
-    transition: 250ms ease-out;
-
-    &:hover,
-    &:active {
-      box-shadow: inset 94.156px 0 0 0 $secondary-color;
-      color: white;
-    }
-  }
-
   .title {
     font-size: 30px;
     font-weight: 500;
@@ -57,13 +41,17 @@ $dropdown-color: rgb(239, 239, 239);
     padding: 0.5rem;
     overflow: hidden;
 
-    a {
-      padding: 0.5rem;
-      margin: 0.25rem 0 0.25rem 0;
+    .dropdown_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin: 0.25rem;
       transition: 120ms ease-in;
       border-radius: 1rem;
       font-size: 24px;
       transition: 120px ease-in;
+      cursor: pointer;
 
       &:hover {
         background: white;

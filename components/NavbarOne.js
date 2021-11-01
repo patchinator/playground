@@ -1,5 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+
 import style from "./NavbarOne.module.scss";
+import Button from "./UI/ButtonSlide1";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faCog, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 const NavbarOne = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -31,17 +36,24 @@ const NavbarOne = () => {
     <nav className={style.navbar}>
       <div className={style.title}>NavbarOne</div>
       <div ref={dropdownRef}>
-        <button className={style.button} onClick={showDropdownHandler}>
-          Menu
-        </button>
+        <Button onClick={showDropdownHandler}>Menu</Button>
         <div
           className={`${style.dropdown} ${
             showDropdown ? style.dropdownFadeIn : style.dropdownFadeOut
           }`}
         >
-          <a href="#">Profile</a>
-          <a href="#">About</a>
-          <a href="#">News</a>
+          <div className={style.dropdown_item}>
+            <a href="#">Profile</a>
+            <FontAwesomeIcon width="1.2rem" icon={faUser} />
+          </div>
+          <div className={style.dropdown_item}>
+            <a href="#">About</a>
+            <FontAwesomeIcon width="1.2rem" icon={faCog} />
+          </div>
+          <div className={style.dropdown_item}>
+            <a href="#">News</a>
+            <FontAwesomeIcon width="1.2rem" icon={faNewspaper} />
+          </div>
         </div>
       </div>
     </nav>
