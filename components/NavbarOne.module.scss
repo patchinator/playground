@@ -1,0 +1,75 @@
+$primary-color: rgb(255, 255, 255);
+$secondary-color: rgb(58, 58, 58);
+$dropdown-color: rgb(239, 239, 239);
+
+.navbar {
+  background: linear-gradient(200deg, $primary-color, $secondary-color);
+  font-family: "Open Sans Condensed", sans-serif;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .button {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-size: 24px;
+    border: none;
+    box-shadow: inset 0 0 0 0 $secondary-color;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 250ms ease-out;
+
+    &:hover,
+    &:active {
+      box-shadow: inset 94.156px 0 0 0 $secondary-color;
+      color: white;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .dropdownFadeIn {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+
+  .dropdownFadeOut {
+    opacity: 0;
+    transition: opacity 200ms;
+    visibility: hidden;
+  }
+
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 81px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background: $dropdown-color;
+    padding: 0.5rem;
+    overflow: hidden;
+
+    a {
+      padding: 0.5rem;
+      margin: 0.25rem 0 0.25rem 0;
+      transition: 120ms ease-in;
+      border-radius: 1rem;
+      font-size: 24px;
+      transition: 120px ease-in;
+
+      &:hover {
+        background: white;
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+  }
+}
