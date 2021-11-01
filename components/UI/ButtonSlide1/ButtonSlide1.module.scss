@@ -1,6 +1,8 @@
+$primary-color: rgb(255, 255, 255);
 $secondary-color: rgb(58, 58, 58);
 
 .button {
+  background: $primary-color;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   font-size: 24px;
   border: none;
@@ -11,7 +13,7 @@ $secondary-color: rgb(58, 58, 58);
 
   &:hover,
   &:active {
-    box-shadow: inset 94.156px 0 0 0 $secondary-color;
+    box-shadow: inset 94px 0 0 0 $secondary-color;
     color: white;
   }
 }

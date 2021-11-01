@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import NavbarOne from "./NavbarOne";
+import NavbarOne from "./UI/NavbarOne/NavbarOne";
 
 const Navbars = () => {
   return (
