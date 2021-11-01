@@ -1,4 +1,5 @@
 $primary_color: rgb(101, 178, 230);
+$search_color: rgb(62, 141, 194);
 
 .navbar {
   width: 100vw;
@@ -9,5 +10,42 @@ $primary_color: rgb(101, 178, 230);
 
   .navbar_button_wrapper {
     display: flex;
+    margin-left: 2rem;
+  }
+
+  .navbar_search {
+    display: flex;
+    margin-right: 2rem;
+    border-radius: 0.25rem;
+
+    button {
+      background: whitesmoke;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      transition: 120ms ease-in;
+      cursor: pointer;
+      color: $search_color;
+      border-radius: 0 1rem 1rem 0;
+
+      &:hover {
+        background: $search_color;
+        color: whitesmoke;
+      }
+    }
+
+    input {
+      border: none;
+      padding: 0.75rem;
+      font-size: 18px;
+      outline: none;
+      border-radius: 1rem 0 0 1rem;
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+    }
   }
 }

@@ -1,4 +1,5 @@
 $button_color: rgb(101, 178, 230);
+$button_color_dark: rgb(62, 141, 194);
 
 .button {
   border: none;
@@ -11,7 +12,7 @@ $button_color: rgb(101, 178, 230);
   color: white;
 
   &:hover {
-    color: rgb(36, 36, 36);
+    color: $button_color_dark;
   }
 
   &:before {
