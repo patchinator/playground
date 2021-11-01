@@ -1,11 +1,36 @@
+$button_color: rgb(101, 178, 230);
+
 .button {
   border: none;
-  background: chartreuse;
+  background: $button_color;
   cursor: pointer;
   font-size: 20px;
   padding: 1rem;
+  position: relative;
+  z-index: 1;
+  color: white;
 
   &:hover {
-    background: rgb(255, 255, 255);
+    color: rgb(36, 36, 36);
+  }
+
+  &:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background: whitesmoke;
+  }
+
+  &:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
   }
 }

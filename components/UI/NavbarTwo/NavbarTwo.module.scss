@@ -1,6 +1,8 @@
+$primary_color: rgb(101, 178, 230);
+
 .navbar {
   width: 100vw;
-  background: rgb(236, 236, 255);
+  background: $primary_color;
   display: flex;
   align-items: center;
   justify-content: space-between;
