@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 import style from "./NavbarOne.module.scss";
-import Button from "../ButtonSlide1/ButtonSlide1";
+import Button from "../ButtonSlideOne/ButtonSlideOne";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCog, faNewspaper } from "@fortawesome/free-solid-svg-icons";

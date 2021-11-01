@@ -1,12 +1,12 @@
-$primary-color: rgb(255, 255, 255);
+$primary-color: rgb(218, 218, 218);
 $secondary-color: rgb(58, 58, 58);
 $dropdown-color: rgb(218, 218, 218);
 
 .navbar {
-  background: linear-gradient(270deg, $primary-color, $secondary-color);
+  background: linear-gradient(270deg, $primary-color 20%, $secondary-color);
   font-family: "Open Sans Condensed", sans-serif;
   width: 100vw;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

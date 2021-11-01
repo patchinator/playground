@@ -1,4 +1,4 @@
-import style from "./ButtonSlide1.module.scss";
+import style from "./ButtonSlideOne.module.scss";
 
 const ButtonSlide1 = (props) => {
   return (

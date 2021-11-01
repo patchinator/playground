@@ -1,5 +1,5 @@
 import style from "./NavbarTwo.module.scss";
-import ButtonSlide2 from "../ButtonSlide2/ButtonSlide2";
+import ButtonSlide2 from "../ButtonSlideTwo/ButtonSlideTwo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
